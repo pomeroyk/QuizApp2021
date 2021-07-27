@@ -1,2 +1,2 @@
-# QuizApp2021
+# QuizApp
 Quiz app for summer pd
