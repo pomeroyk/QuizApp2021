@@ -1,3 +1,19 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">QuizApp</string>
+    <string name="score">score</string>
+    <string name="next">Next</string>
+    <string name="True"> True</string>
+    <string name="False" >False</string>
+    <string name="Q1">Green is a color</string>
+    <string name ="Q2">Summer is a month</string>
+    <string name ="Q3">Sunday is the first day of the week</string>
+    <string name ="Q4">October is month 8</string>
+    <string name ="Q0">There are 12 months in the year</string>
+    <string name="correctToast">That\'s correct!</string>
+    <string name="WrongToast">Try again!</string>
+    <string name="CorrectToast">That\'s correct!</string>
+
+    <string name="scorelabel">scoreLBL</string>
+    <string name="subject">new score on the quiz app</string>
+    <string name="send_email">Send Email</string>
 </resources>

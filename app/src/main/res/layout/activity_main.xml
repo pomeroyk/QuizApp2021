@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/FalseButton"
-        android:text="False"
+        android:text="@string/False"
         android:textSize = "14pt"
         />
 
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/TrueButton"
-        android:text="True"
+        android:text="@string/True"
         android:textSize = "14pt"
         />
 
@@ -37,8 +37,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/NextButton"
-        android:text="Next"
+        android:text="@string/next"
         android:textSize = "14pt"
         />
 
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imageIcon"
+
+        />
 </LinearLayout>
