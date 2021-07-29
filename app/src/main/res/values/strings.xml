@@ -3,17 +3,18 @@
     <string name="score">score</string>
     <string name="next">Next</string>
     <string name="True"> True</string>
-    <string name="False" >False</string>
+    <string name="False">False</string>
     <string name="Q1">Green is a color</string>
-    <string name ="Q2">Summer is a month</string>
-    <string name ="Q3">Sunday is the first day of the week</string>
-    <string name ="Q4">October is month 8</string>
-    <string name ="Q0">There are 12 months in the year</string>
+    <string name="Q2">Summer is a month</string>
+    <string name="Q3">Sunday is the first day of the week</string>
+    <string name="Q4">October is month 8</string>
+    <string name="Q0">There are 12 months in the year</string>
     <string name="correctToast">That\'s correct!</string>
-    <string name="WrongToast">Try again!</string>
+    <string name="WrongToast">Incorrect!</string>
     <string name="CorrectToast">That\'s correct!</string>
 
     <string name="scorelabel">scoreLBL</string>
     <string name="subject">new score on the quiz app</string>
     <string name="send_email">Send Email</string>
+    <string name="would_you_like_to_add_a_high_score">Type your name in the box to add yourself to the high score list</string>
 </resources>

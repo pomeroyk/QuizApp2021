@@ -1,23 +1,18 @@
 package com.example.quizapp2021;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.res.ResourcesCompat;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.quizapp2021.R.drawable.colors;
-import static com.example.quizapp2021.R.drawable.ellieimg;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         trueButton = (Button) findViewById(R.id.TrueButton);
         falseButton = (Button) findViewById(R.id.FalseButton);
-        nextButton = (Button) findViewById(R.id.NextButton);
+
         imageIC = (ImageView) findViewById(R.id.imageIcon);
         int[] images = {R.drawable.months, R.drawable.colors, R.drawable.seasons, R.drawable.calendar, R.drawable.october };
 
@@ -92,6 +87,17 @@ public class MainActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+                if (currentQIndex < questions.length - 1) {
+                    currentQIndex++;
+                    question.setText(questions[currentQIndex].getQuestionText());
+                    imageIC.setImageResource(images[currentQIndex]);
+                } else {
+
+                    Intent intent = new Intent(MainActivity.this, ScoreActivity.class);
+                    intent.putExtra(getString(R.string.scorelabel), score);
+                    startActivity(intent);
+                }
+
             }
         });
 
@@ -107,12 +113,6 @@ public class MainActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
-            }
-        });
-
-
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
                 if (currentQIndex < questions.length - 1) {
                     currentQIndex++;
                     question.setText(questions[currentQIndex].getQuestionText());
@@ -123,10 +123,16 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra(getString(R.string.scorelabel), score);
                     startActivity(intent);
                 }
+
+
             }
         });
 
+
+
+
     }
+
     }
 
 

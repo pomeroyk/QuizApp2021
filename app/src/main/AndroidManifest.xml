@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
-        <activity android:name="com.example.quizapp2021.ScoreActivity"></activity>
-        <activity android:name="com.example.quizapp2021.MainActivity">
+        <activity android:name=".HighScoreActivity"></activity>
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

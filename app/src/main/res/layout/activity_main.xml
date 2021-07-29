@@ -15,16 +15,6 @@
         android:textSize = "24pt"
         />
 
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/FalseButton"
-        android:text="@string/False"
-        android:textSize = "14pt"
-        />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,10 +26,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/NextButton"
-        android:text="@string/next"
+        android:id="@+id/FalseButton"
+        android:text="@string/False"
         android:textSize = "14pt"
         />
+
+
+
+
 
 
 

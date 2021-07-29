@@ -4,24 +4,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/scoreTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="top"
         android:text="@string/score"
+        android:textAlignment="gravity"
+        android:textSize="34sp" />
+
+    <Space
+        android:id="@+id/spaceTV"
+        android:layout_width="20pt"
+        android:layout_height="13dp" />
+
+    <TextView
+        android:id="@+id/AddHSTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/would_you_like_to_add_a_high_score"
         android:textAlignment="center"
         android:textSize="34sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/NameET"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="Enter your name"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/EnterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:textSize="14pt" />
+
+    </LinearLayout>
     <Button
-        android:id="@+id/emailBTN"
+        android:id="@+id/SKIPButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:text="@string/send_email"
+        android:text="Skip"
         android:textSize="14pt" />
 
 </LinearLayout>
