@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
         currentQIndex = 0;
         //imageIC.setImageDrawable(drawable);
 
-        q1 = new Question(getString(R.string.Q1), true);
-        q2 = new Question(getString(R.string.Q2), false);
-        q3 = new Question(getString(R.string.Q3), true);
-        q4 = new Question(getString(R.string.Q4), false);
-        q0 = new Question(getString(R.string.Q0), true);
+        q1 = new Question(getString(R.string.Q1), true, images[1]);
+        q2 = new Question(getString(R.string.Q2), false, images[2]);
+        q3 = new Question(getString(R.string.Q3), true, images[3]);
+        q4 = new Question(getString(R.string.Q4), false, images[4]);
+        q0 = new Question(getString(R.string.Q0), true, images[0]);
 
 
         questions = new Question[5];
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         question.setText(questions[currentQIndex].getQuestionText());
 
 
-        imageIC.setImageResource(images[currentQIndex]);
+        imageIC.setImageResource(questions[currentQIndex].getImageName());
 
 
 

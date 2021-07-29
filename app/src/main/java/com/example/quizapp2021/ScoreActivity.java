@@ -50,7 +50,12 @@ public class ScoreActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        nameET.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nameET.setText("");
+            }
+        });
         enterBTN.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
 

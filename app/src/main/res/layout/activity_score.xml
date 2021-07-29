@@ -39,8 +39,9 @@
 
         <EditText
             android:id="@+id/NameET"
-            android:layout_width="wrap_content"
+            android:layout_width="247dp"
             android:layout_height="47dp"
+            android:background="@color/teal_200"
             android:gravity="center"
             android:text="Enter your name"
             android:textAlignment="center"
