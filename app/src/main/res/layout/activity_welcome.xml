@@ -6,27 +6,22 @@
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:id="@+id/btnEnglish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="English"
-         />
-
-    <Button
-        android:id="@+id/btnSpanish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spanish"
-         />
-
     <TextView
         android:id="@+id/welcomeTV"
         android:layout_width="238dp"
         android:layout_height="198dp"
-        android:text="Welcome to my Quiz App!  Please select your language."
+        android:text="@string/welcome_to_my_quiz_app"
         android:textSize="34sp"
 
+        />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
          />
+
+
 
 </LinearLayout>

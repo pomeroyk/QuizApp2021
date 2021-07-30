@@ -17,4 +17,10 @@
     <string name="subject">new score on the quiz app</string>
     <string name="send_email">Send an Email to yourself showing the leaderboard</string>
     <string name="would_you_like_to_add_a_high_score">Type your name in the box to add yourself to the high score list</string>
+    <string name="welcome_to_my_quiz_app">Welcome to my Quiz App!</string>
+    <string name="start">Start</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="email_to_yourself">Email to yourself?</string>
 </resources>

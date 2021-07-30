@@ -9,6 +9,11 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/displayScoreTV"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:textSize="14pt" />
+    <TextView
         android:id="@+id/scoreTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,24 +48,30 @@
             android:layout_height="47dp"
             android:background="@color/teal_200"
             android:gravity="center"
-            android:text="Enter your name"
+            android:text="@string/enter_your_name"
             android:textAlignment="center"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/EnterButton"
-            android:layout_width="wrap_content"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
             android:text="Enter"
-            android:textSize="14pt" />
+            android:textSize="12pt" />
 
     </LinearLayout>
     <Button
-        android:id="@+id/SKIPButton"
+        android:id="@+id/EmailButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip"
+        android:text="@string/email_to_yourself"
         android:textSize="14pt" />
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="12pt" />
 
 </LinearLayout>
 
