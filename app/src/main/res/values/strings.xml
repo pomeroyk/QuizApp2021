@@ -15,6 +15,6 @@
 
     <string name="scorelabel">scoreLBL</string>
     <string name="subject">new score on the quiz app</string>
-    <string name="send_email">Send Email</string>
+    <string name="send_email">Send an Email to yourself showing the leaderboard</string>
     <string name="would_you_like_to_add_a_high_score">Type your name in the box to add yourself to the high score list</string>
 </resources>

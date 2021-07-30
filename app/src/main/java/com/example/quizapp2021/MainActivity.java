@@ -2,9 +2,11 @@ package com.example.quizapp2021;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -14,7 +16,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     TextView question;
     Button trueButton;
@@ -67,12 +73,7 @@ public class MainActivity extends AppCompatActivity {
         questions[4] = q4;
         question.setText(questions[currentQIndex].getQuestionText());
 
-
         imageIC.setImageResource(questions[currentQIndex].getImageName());
-
-
-
-
 
         trueButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -131,6 +132,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+    public void setLocale(String lang) {
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, MainActivity.class);
+        finish();
+        startActivity(refresh);
     }
 
     }
